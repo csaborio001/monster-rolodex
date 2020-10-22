@@ -16,7 +16,7 @@ class App extends Component{
 	}
 
 	componentDidMount() { // Accesible because this is class.
-		fetch('http://jsonplaceholder.typicode.com/users') // Get the data source. 
+		fetch('https://jsonplaceholder.typicode.com/users') // Get the data source. 
 		.then( response => response.json() ) // Convert response to JSON.
 		.then( users => this.setState({ monsters: users })) 
 	}
